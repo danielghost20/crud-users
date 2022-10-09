@@ -72,11 +72,11 @@ function App() {
       />
     </div>
     <div className='App_title_button'>
-    <h2>Crud of users</h2>
+    <h2>CRUD OF USERS</h2>
     <button onClick={() => setForm(false)}>Add user</button>
     </div>
 
-    <div className='users_list'>
+    <div>
       <UserList 
         setForm = {setForm}
         users = {users}

@@ -13,8 +13,8 @@ const User = ({user, deleteUser, setUpdateInfo, setForm}) => {
     <article className='user_card'>
       <h2 className='user_card_title'>{user.first_name} {user.last_name}</h2>
       <ul className='user_card_ul'>
-        <li><p>EMAIL</p>{user.email}</li>
-        <li><p>BIRTHDAY</p><AiOutlineGift/>{user.birthday}</li>
+        <li><span>EMAIL</span>{user.email}</li>
+        <li><span>BIRTHDAY</span><AiOutlineGift/>{user.birthday}</li>
       </ul>
       <div className='user_card_buttons'>
         <AiFillDelete className='button_delete' onClick={() => deleteUser(user.id)} />

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-p {
+span {
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 800;
+    display: block;
+    opacity: .7;
 }
 
 li {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 .list_users {
