@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+p {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+}
+
+.list_users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user_card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+}
+.user_card_title {
+    text-align: center;
+}
+
+.user_card_ul {
+    list-style: none;
+    margin-right: auto;
+    padding: 5px;
+    line-height: 30px;
+}
+.user_card_buttons {
+    margin-left: auto;
+    padding: 5px;
+}
+.user_card_buttons {
+    display: flex;
+    gap: 1rem;
+}
+.button_delete {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    transition: box-shadow .3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button_delete:hover {
+    transition: box-shadow .3s ease;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.568);
+}
+.button_edit:hover {
+    transition: box-shadow .3s ease;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.568);
+    background-color: blue;
+    transition: background-color .3s ease;
+}
+.button_edit {
+    font-size: 30px;
+    background-color: rgba(11, 11, 126, 0.788);
+    color: white;
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+    transition: background-color .3s ease;
+    border-radius: 5px;
+
+}

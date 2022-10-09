@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App_title_button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.App_title_button button {
+    padding: 15px;
+    cursor: pointer;
+    background-color: rgba(11, 11, 126, 0.788);
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: background-color .5s ease;
+}
+.App_title_button button:hover {
+    background-color: blue;
+    transition: background-color .5s ease;
+}
