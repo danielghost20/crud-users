@@ -4,6 +4,8 @@ import '../styles/users_form.css'
 import { AiFillCloseCircle } from "react-icons/ai";
 const FormUsers = ({createNewUser, updateInfo, updateUser, setUpdateInfo, setForm}) => {
 
+  // Values for default from form
+
     const valorDefault = {
         first_name: '',
         last_name: '',
@@ -12,13 +14,19 @@ const FormUsers = ({createNewUser, updateInfo, updateUser, setUpdateInfo, setFor
         birthday: ''
     }
 
+    // HOOK USEFORM
+
     const {handleSubmit, register, reset} = useForm ()
+
+    // THIS USEEFFECT TAKES CARE OF PREVENT A CICLE INFINITE WHEN EDIT AN USER
 
     useEffect(() => {
       if (updateInfo) {
         reset(updateInfo)
       }
     }, [updateInfo])
+
+    // THIS FUNCTION TAKES CARE OF (UPDATE  AND CREATE A NEW USER IF AN USER IS EDIT OR CREATE)
 
     const submit = data => {
 
@@ -33,7 +41,7 @@ const FormUsers = ({createNewUser, updateInfo, updateUser, setUpdateInfo, setFor
         setForm(true)
     }
 
-    
+    // STRUCTURE THE FORM (JSX)
   return (
     <form onSubmit={handleSubmit(submit)} className='form '> 
     <h3>{updateInfo ? 'Update User' : 'Create User'}</h3>

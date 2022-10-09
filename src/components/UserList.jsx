@@ -1,6 +1,7 @@
 import React from 'react'
 import User from './User'
 
+// THIS COMPONENT IS A LIST OF ALL USERS
 const UserList = ({users, deleteUser, setUpdateInfo, setForm}) => {
   return (
     <div>

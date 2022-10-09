@@ -4,10 +4,14 @@ import '../styles/user.css'
 
 const User = ({user, deleteUser, setUpdateInfo, setForm}) => {
 
+  // THIS FUNCTION EDIT AN USER AND DISPLAY THE FORM
+
   const handleEdit = () => {
     setUpdateInfo(user)
     setForm(false)
   }
+
+  // STRUCTURE USERS (JSX)
 
   return (
     <article className='user_card'>

@@ -45,8 +45,8 @@ h3 {
 }
 .form_icom_close {
     position: absolute;
-    left: 220px;
-    font-size: 20px;
+    left: 250px;
+    font-size: 25px;
     cursor: pointer;
     transition: font-zise 1s ease;
 }
