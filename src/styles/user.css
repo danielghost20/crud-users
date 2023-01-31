@@ -75,3 +75,11 @@ li {
     border-radius: 5px;
 
 }
+.user_card_message_delete {
+    width: 20px;
+    height: 30px;
+}
+
+.user_card_message_delete_none {
+    display: none;
+}

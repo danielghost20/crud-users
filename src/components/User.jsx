@@ -22,6 +22,7 @@ const User = ({user, deleteUser, setUpdateInfo, setForm}) => {
       </ul>
       <div className='user_card_buttons'>
         <AiFillDelete className='button_delete' onClick={() => deleteUser(user.id)} />
+
         <AiFillEdit className='button_edit' onClick={handleEdit}/>
       </div>
     </article>
